@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/sass/style.css')}}">
+{% endblock %}
+
+{% block body %}
+
+<h1 class="text-center no-select">Bienvenue sur le site de Thibzee</h1>
+
+<section class="text-center">
+
+{% if app.user %}
+
+<p class="no-select">T'es un sacré bg à t'être connecté sur ce site <br>Maintenant bienvenu dans le club très prisé du Thibzee</p>
+
+{% else %}
+ <p class=" no-select text-center">Premièrement veuillez vous connecter ou vous inscrire pour continuer</p>
+<a class="no-select" href="{{ path('login') }}">Se connecter</a>
+<a class="no-select" href="{{ path('register') }}">S'inscrire</a>
+
+{% endif %}
+
+
+{% endblock %}

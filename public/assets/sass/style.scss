@@ -1,0 +1,86 @@
+$background: #292E2E;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+body {
+    background-color: $background ;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+li {
+    list-style: none;
+    display: flex;
+    margin-right: 4%;
+}
+.navbar {
+    display: flex;
+}
+ul {
+    display: flex;
+    min-width: 75%;
+    width: auto;
+}
+a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 7px;
+}
+.button {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 7px;
+    background-color:#292E2E;
+}
+.button:active {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 7px;
+}
+a:active{
+    color: black;
+    background-color: white;
+}
+.text-center{
+    text-align: center;
+}
+.selecteur {
+    width: 50%;
+    margin-bottom: 25px ;
+    font-size: large;
+    padding-left: 20px;
+    margin-left: 25%;
+    height: 40px;
+    color: white;
+    background-color:#292E2E;
+}
+form button {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    margin: auto;
+}
+.deco {
+    width: auto;
+    height: fit-content;
+    margin-top:16px;
+}
+.avatar {
+    height: 20vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.no-select {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

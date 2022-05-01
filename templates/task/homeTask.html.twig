@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Task{% endblock %}
+
+{% block body %}
+
+{% for tasks in task %}
+    <p class="text-center">{{ tasks.title }}</p>
+    <p class="text-center">{{ tasks.content }}</p>
+    <br>
+{% endfor %}
+
+{% endblock %}

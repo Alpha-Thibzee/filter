@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon profil{% endblock %}
+
+{% block body %}
+<section class="container no-select">
+<img class="avatar no-select" src="{{ asset('assets/image/' ~ user.avatar) }}" alt="">
+<p class="no-select">{{ user.username}}</p>
+</section>
+
+{% endblock %}
